@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-R Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    
+    <div class="box">
+        <div class="qrheader">
+            <h1>Generate Qr Code</h1>
+            <input type="text"  id="qrtext" placeholder="type your text or  url">
+            <div>
+                <label for="sizes">Select Size</label>
+                <Select id="sizes">
+                    <option value="100">100*100</option>
+                    <option value="200">200*200</option>
+                    <option value="300">300*300</option>
+                    <option value="400">400*400</option>
+                    <option value="500">500*500</option>
+                    <option value="600">600*600</option>
+                    <option value="700">700*700</option>
+                    <option value="800">800*800</option>
+                    <option value="900">900*900</option>
+                </Select>   
+            </div>
+        </div>
+        <div id="qrbody">
+
+        </div>
+        <div class="qrfooter">
+            <a href="Genrate" id="genratebtn">Generate</a>
+            <a href="Download" id="downloadbtn" download="QR_Code.jpg">Download</a>
+            
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js" integrity="sha512-is1ls2rgwpFZyixqKFEExPHVUUL+pPkBEPw47s/6NDQ4n1m6T/ySeDW3p54jp45z2EJ0RSOgilqee1WhtelXfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+</body>
+</html>
